@@ -1,0 +1,86 @@
+{
+  "TRILHAS": {
+    "Settings": {
+      "desviarAoArrastar": {
+        "Name": "Desviar de paredes ao arrastar",
+        "Hint": "Ao arrastar um token, o trajeto contorna paredes, portas fechadas e terreno intransponível em vez de parar na parede. Vale para todos."
+      },
+      "mostrarAlcance": {
+        "Name": "Pintar o alcance do turno",
+        "Hint": "Ao selecionar um token, pinta as casas que ele alcança com o movimento que sobra no turno.",
+        "combate": "Só em combate",
+        "sempre": "Sempre",
+        "nunca": "Nunca"
+      },
+      "mostrarDobro": {
+        "Name": "Mostrar também o dobro (Disparada)",
+        "Hint": "Pinta num tom mais claro as casas que o token alcança gastando o dobro do deslocamento."
+      },
+      "corAlcance": {
+        "Name": "Cor do alcance",
+        "Hint": "Cor das casas pintadas, em hexadecimal (ex.: #3fa7ff)."
+      },
+      "mostrarRestante": {
+        "Name": "Mostrar quanto falta na régua",
+        "Hint": "Ao arrastar um token, o último ponto da régua mostra quanto movimento ainda sobra no turno (ex.: \"faltam 15 ft\")."
+      },
+      "colorirRegua": {
+        "Name": "Régua vermelha quando passar do deslocamento",
+        "Hint": "Pinta de vermelho o trecho da régua que passa do deslocamento. No D&D 5e o próprio sistema já faz isso e esta opção é ignorada."
+      },
+      "atributoDeslocamento": {
+        "Name": "Atributo de deslocamento",
+        "Hint": "Caminho do deslocamento na ficha do ator (ex.: system.attributes.speed.value). Em branco: automático no D&D 5e."
+      },
+      "deslocamentoPadrao": {
+        "Name": "Deslocamento padrão",
+        "Hint": "Usado quando a ficha não informa o deslocamento. 0 desliga o alcance e o \"faltam\" para esses tokens."
+      },
+      "npcLimitarTurno": {
+        "Name": "Caminho automático para no fim do turno",
+        "Hint": "Em combate, o token que anda sozinho para quando acaba o movimento que sobra no turno."
+      },
+      "npcEvitarTokens": {
+        "Name": "Caminho automático desvia de tokens",
+        "Hint": "O token que anda sozinho não passa por casas ocupadas por outros tokens."
+      }
+    },
+    "Atalhos": {
+      "moverAteCursor": {
+        "Name": "Andar até o cursor",
+        "Hint": "Mestre: os tokens selecionados andam sozinhos até o ponto embaixo do cursor, pelo melhor caminho."
+      },
+      "alternarAlcance": {
+        "Name": "Ligar/desligar a pintura do alcance",
+        "Hint": "Esconde ou mostra as casas pintadas do alcance do turno."
+      }
+    },
+    "Alcance": {
+      "Ligado": "Alcance do turno: ligado.",
+      "Desligado": "Alcance do turno: desligado."
+    },
+    "Regua": {
+      "Faltam": "faltam {valor} {unidades}",
+      "Excede": "passou {valor} {unidades}"
+    },
+    "Npc": {
+      "SemToken": "Selecione um token para andar até o cursor.",
+      "SemCaminho": "{nome} não tem caminho até esse ponto.",
+      "SemMovimento": "{nome} já usou todo o movimento deste turno.",
+      "GradeNaoSuportada": "{nome}: o caminho automático só funciona em grade quadrada com tokens de tamanho inteiro."
+    },
+    "Intransponivel": {
+      "FIELDS": {
+        "acoes": {
+          "label": "Bloqueia",
+          "hint": "Tipos de movimento que não passam por aqui. Em branco: bloqueia todos. Ex.: marque só Andar para um abismo que voadores atravessam."
+        }
+      }
+    }
+  },
+  "TYPES": {
+    "RegionBehavior": {
+      "trilhas-mesa.intransponivel": "Terreno intransponível"
+    }
+  }
+}

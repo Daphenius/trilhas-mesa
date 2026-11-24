@@ -1,0 +1,45 @@
+{
+  "id": "trilhas-mesa",
+  "title": "Trilhas da Mesa",
+  "description": "Caminho automático que desvia de paredes, alcance do turno pintado no mapa, \"faltam X\" na régua e terreno intransponível por Regiões. Usa o movimento nativo do Foundry 14.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Daphenius"
+    }
+  ],
+  "url": "https://github.com/Daphenius/trilhas-mesa",
+  "manifest": "https://github.com/Daphenius/trilhas-mesa/releases/latest/download/module.json",
+  "download": "https://github.com/Daphenius/trilhas-mesa/releases/download/v0.1.0/trilhas-mesa.zip",
+  "license": "https://github.com/Daphenius/trilhas-mesa/blob/main/LICENSE",
+  "readme": "https://github.com/Daphenius/trilhas-mesa/blob/main/README.md",
+  "changelog": "https://github.com/Daphenius/trilhas-mesa/blob/main/CHANGELOG.md",
+  "bugs": "https://github.com/Daphenius/trilhas-mesa/issues",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.370"
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/trilhas.css"
+  ],
+  "documentTypes": {
+    "RegionBehavior": {
+      "intransponivel": {}
+    }
+  },
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ]
+}

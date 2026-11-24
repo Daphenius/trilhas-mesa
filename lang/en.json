@@ -1,0 +1,86 @@
+{
+  "TRILHAS": {
+    "Settings": {
+      "desviarAoArrastar": {
+        "Name": "Route around walls when dragging",
+        "Hint": "When dragging a token, the path goes around walls, closed doors and impassable terrain instead of stopping at the wall. Applies to everyone."
+      },
+      "mostrarAlcance": {
+        "Name": "Highlight turn reach",
+        "Hint": "When a token is selected, highlights the spaces it can reach with the movement left this turn.",
+        "combate": "Only in combat",
+        "sempre": "Always",
+        "nunca": "Never"
+      },
+      "mostrarDobro": {
+        "Name": "Also show double move (Dash)",
+        "Hint": "Highlights in a lighter tone the spaces the token can reach spending double its speed."
+      },
+      "corAlcance": {
+        "Name": "Reach color",
+        "Hint": "Color of the highlighted spaces, in hex (e.g. #3fa7ff)."
+      },
+      "mostrarRestante": {
+        "Name": "Show movement left on the ruler",
+        "Hint": "While dragging a token, the last ruler point shows how much movement is left this turn (e.g. \"15 ft left\")."
+      },
+      "colorirRegua": {
+        "Name": "Red ruler past speed",
+        "Hint": "Colors red the part of the ruler beyond the token's speed. D&D 5e already does this, so the option is ignored there."
+      },
+      "atributoDeslocamento": {
+        "Name": "Speed attribute",
+        "Hint": "Path to the speed on the actor (e.g. system.attributes.speed.value). Blank: automatic in D&D 5e."
+      },
+      "deslocamentoPadrao": {
+        "Name": "Default speed",
+        "Hint": "Used when the actor has no speed. 0 turns off reach and \"left\" for those tokens."
+      },
+      "npcLimitarTurno": {
+        "Name": "Auto path stops at end of turn",
+        "Hint": "In combat, a token walking on its own stops when it runs out of movement for the turn."
+      },
+      "npcEvitarTokens": {
+        "Name": "Auto path avoids tokens",
+        "Hint": "A token walking on its own does not pass through spaces occupied by other tokens."
+      }
+    },
+    "Atalhos": {
+      "moverAteCursor": {
+        "Name": "Walk to cursor",
+        "Hint": "GM: selected tokens walk on their own to the point under the cursor, along the best path."
+      },
+      "alternarAlcance": {
+        "Name": "Toggle reach highlight",
+        "Hint": "Hides or shows the turn reach highlight."
+      }
+    },
+    "Alcance": {
+      "Ligado": "Turn reach: on.",
+      "Desligado": "Turn reach: off."
+    },
+    "Regua": {
+      "Faltam": "{valor} {unidades} left",
+      "Excede": "{valor} {unidades} over"
+    },
+    "Npc": {
+      "SemToken": "Select a token to walk to the cursor.",
+      "SemCaminho": "{nome} has no path to that point.",
+      "SemMovimento": "{nome} has used all movement this turn.",
+      "GradeNaoSuportada": "{nome}: auto path only works on square grids with whole-size tokens."
+    },
+    "Intransponivel": {
+      "FIELDS": {
+        "acoes": {
+          "label": "Blocks",
+          "hint": "Movement types that cannot pass. Blank: blocks all. E.g. tick only Walk for a chasm that flyers can cross."
+        }
+      }
+    }
+  },
+  "TYPES": {
+    "RegionBehavior": {
+      "trilhas-mesa.intransponivel": "Impassable terrain"
+    }
+  }
+}

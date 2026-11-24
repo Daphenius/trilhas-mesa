@@ -1,0 +1,18 @@
+/* Texto "faltam X" no último ponto da régua do token. */
+.waypoint-label .trilhas-restante {
+  margin-left: 0.4em;
+  padding: 0 0.35em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+.waypoint-label .trilhas-sobra {
+  background: rgba(46, 125, 50, 0.75);
+  color: #fff;
+}
+
+.waypoint-label .trilhas-excede {
+  background: rgba(198, 40, 40, 0.8);
+  color: #fff;
+}
